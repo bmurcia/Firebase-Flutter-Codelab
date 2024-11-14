@@ -54,7 +54,8 @@ class HomePage extends StatelessWidget {
                 if (appState.loggedIn) ...[
                   const Header('Discussion'),
                   GuestBook(
-                    addMessage: (message) => appState.addMessageToGuestBook(message), 
+                    addMessage: (message) => appState.addMessageToGuestBook(message),
+                    messages: appState.guestBookMessages, 
                   ),
                 ]
               ],
